@@ -59,13 +59,13 @@ To combat the overfitting, I added dropout steps to the model after each layer a
 
 I then tested the model in the simulator.  It ran ok, but had issues on specific turns near water.  I then realized (after re-reading the project instructions) my training code used the BGR color map to feed the model while the simulator used RGB images.   I corrected this issue, reran the test, and corrected the turn issue. 
 
-![BGR-RGB](C:\Users\Brandon\CarND-Behavioral-Cloning-P3\images\BGR-RGB.png)
+![BGR-RGB](images/BGR-RGB.png)
 
 I trained the model for 16 epochs; the point at which the validation loss stopped decreasing.
 
 The next steps were to run the simulator to see how well the car was driving around the test tracks.  The vehicle successfully drove around track one.  It drove pretty well over track two except when it reached a section with sharp turns.  To overcome this, I added new training data by driving through the hard turns on track two as shown below.
 
-![sharp-turns](C:\Users\Brandon\CarND-Behavioral-Cloning-P3\images\sharp-turns.gif)
+![sharp-turns](images/sharp-turns.gif)
 
 
 
@@ -118,7 +118,7 @@ I then recorded the vehicle recovering from the left side and right sides of the
 
 
 
-![recover](C:\Users\Brandon\CarND-Behavioral-Cloning-P3\images\recover.gif)
+![recover](images/recover.gif)
 
 Then I repeated this process on track two in order to get more data points.
 
@@ -126,23 +126,23 @@ The original data set captured from the simulator included 22,839 angel measurem
 
 
 
-![histograms](C:\Users\Brandon\CarND-Behavioral-Cloning-P3\images\histograms.png)
+![histograms](images/histograms.png)
 
 
 
 To augment the data sat, I flipped images and angles thinking that this would balance out the fact that most of the turns in the training data were left turns.  Here is an image that has then been flipped.
 
-![flipped-image](C:\Users\Brandon\CarND-Behavioral-Cloning-P3\images\flipped-image.png)
+![flipped-image](images/flipped-image.png)
 
 I also cropped out the vehicle bonnet and top sections of the input images to remove irrelevant data . Here is an example of the cropping applied.
 
-![cropping](C:\Users\Brandon\CarND-Behavioral-Cloning-P3\images\cropping.png)
+![cropping](images/cropping.png)
 
 
 
 After augmenting the data set I had 91,356 number of data points.   The following shows the distribution of angles from the augmented data set.
 
-![aug-histogram](C:\Users\Brandon\CarND-Behavioral-Cloning-P3\images\aug-histogram.png)
+![aug-histogram](images/aug-histogram.png)
 
 
 
