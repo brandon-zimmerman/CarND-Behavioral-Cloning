@@ -19,7 +19,7 @@ My model uses a convolutional neural network architecture used by NVIDIA from th
 
 ​	 
 
-![Figure 4: CNN architecture. The network has about 27 million connections and 250 thousand parameters.](https://devblogs.nvidia.com/parallelforall/wp-content/uploads/2016/08/cnn-architecture-624x890.png)
+![Figure 4: CNN architecture. The network has about 27 million connections and 250 thousand parameters.](/images/nvidianetwork.png)
 
 
 
