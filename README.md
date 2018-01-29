@@ -83,7 +83,7 @@ My final model consisted of the following layers:
 | :---------------: | :--------------------------------------: |
 |       Input       |          160x320x3 color image           |
 |    Cropping2D     | Copped 60 pixels from top and 25 from bottom - outputs 75x320x3 |
-|      Lambda       | Normalize pixel data between to a range between -0.5 and 0.5 |
+|      Lambda       | Normalize pixel data to a range between -0.5 and 0.5 |
 | Convolutional 5x5 | 2x2, stride, same padding, outputs 36x158x24 |
 |       RELU        |                                          |
 |      Dropout      |                   20%                    |
