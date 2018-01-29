@@ -112,7 +112,7 @@ My final model consisted of the following layers:
 
 I first recorded four laps of good center lane driving on track one from Udacity's simulator.   Here is an example of of center lane driving within the simulator:
 
-![training-straight](C:\Users\Brandon\CarND-Behavioral-Cloning-P3\images\training-straight.gif)
+![training-straight](images/training-straight.gif)
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to return to the center of the lane. The following animation shows what a recovery looks like starting from outside of a lane.
 
